@@ -3,8 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "description": "",
-  "main": "built/server.js",
-  "author": "Horace Reid III",
+  "main": "built/server",
+  "author": "Blue Net Reflections LLC",
+	"contributors": ["hreid3"],
   "license": "MIT",
   "keywords": [
     "mixed reality",
@@ -24,12 +25,12 @@
     "build-only": "tsc --build",
     "build-watch": "tsc --build --watch --preserveWatchOutput",
     "lint": "eslint --ext .ts src",
-    "start": "node ./server",
-    "start-watch": "nodemon --nolazy --inspect ./server",
-    "debug": "node --nolazy --inspect=9229 ./server",
-		"debug-brk": "node --nolazy --inspect-brk=9229 ./server",
-    "debug-watch": "npm run build-only && concurrently \"npm run build-watch\" \"nodemon --nolazy --inspect=9229 ./server\"",
-		"debug-watch-brk": "npm run build-only && concurrently \"npm run build-watch\" \"nodemon --nolazy --inspect-brk=9229 ./server\""
+    "start": "node .",
+    "start-watch": "nodemon --nolazy --inspect .",
+    "debug": "node --nolazy --inspect=9229 .",
+    "debug-brk": "node --nolazy --inspect-brk=9229 .",
+    "debug-watch": "npm run build-only && concurrently \"npm run build-watch\" \"nodemon --nolazy --inspect=9229 .\"",
+    "debug-watch-brk": "npm run build-only && concurrently \"npm run build-watch\" \"nodemon --nolazy --inspect-brk=9229 .\""
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^2.17.0",

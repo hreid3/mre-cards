@@ -6,9 +6,9 @@
 import * as MRE from '@microsoft/mixed-reality-extension-sdk';
 
 /**
- * The main class of this app. All the logic goes here.
+ * The main class of this Index. All the logic goes here.
  */
-export default class App {
+export default class Index {
 	private text: MRE.Actor = null;
 	private cube: MRE.Actor = null;
 	private assets: MRE.AssetContainer;
@@ -18,7 +18,7 @@ export default class App {
 	}
 
 	/**
-	 * Once the context is "started", initialize the app.
+	 * Once the context is "started", initialize the Index.
 	 */
 	private async started() {
 		// set up somewhere to store loaded assets (meshes, textures, animations, gltfs, etc.)

@@ -30,7 +30,7 @@ function runApp() {
 }
 
 // Check whether code is running in a debuggable watched filesystem
-// environment and if so, delay starting the app by one second to give
+// environment and if so, delay starting the Index by one second to give
 // the debugger time to detect that the server has restarted and reconnect.
 // The delay value below is in milliseconds so 1000 is a one second delay.
 // You may need to increase the delay or be able to decrease it depending
