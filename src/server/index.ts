@@ -22,7 +22,7 @@ dotenv.config();
 function runApp() {
 	// Start listening for connections, and serve static files.
 	const server = new MRE.WebHost({
-		baseDir: resolvePath(__dirname, '../public')
+		baseDir: resolvePath(__dirname, '../../public')
 	});
 
 	// Handle new application sessions
